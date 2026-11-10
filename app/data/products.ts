@@ -13,6 +13,24 @@ export interface Product {
 
 export const products: Product[] = [
   {
+    id: 'airpods-pro-3-tws',
+    name: 'AirPods Pro 3 TWS Wireless Earbuds',
+    category: 'Speakers',
+    price: 'DM for Price',
+    condition: 'Brand New Condition',
+    image: 'https://img.drz.lazcdn.com/static/pk/p/7cb1739c9e7bc2a6d8122d1df930c722.png_720x720q80.png_.webp',
+    description: 'Smart TWS wireless earbuds featuring premium audio clarity, sleek design, and extended battery life.',
+    fullDescription: 'Upgrade your audio game with the AirPods Pro 3 with TWS! Engineered with smart features, crystal-clear sound acoustics, active noise reduction support, and a sleek modern design. Offers exceptional battery backup with its wireless charging case for all-day continuous music playback and hands-free HD calls.',
+    specs: [
+      'True Wireless Stereo (TWS) Sound',
+      'Smart Touch Controls & HD Mic',
+      'Long-Lasting Battery Backup',
+      'Compact Wireless Charging Case',
+      'Instant Auto-Pairing Bluetooth 5.3',
+      'Sleek Premium Ergonomic Fit'
+    ]
+  },
+  {
     id: 'iphone-16-pro-max-256gb',
     name: 'Apple iPhone 16 Pro Max (256GB)',
     category: 'Mobiles',
