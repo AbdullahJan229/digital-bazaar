@@ -13,6 +13,24 @@ export interface Product {
 
 export const products: Product[] = [
   {
+    id: 'google-pixel-7-pta',
+    name: 'Google Pixel 7 (8GB / 128GB)',
+    category: 'Mobiles',
+    price: 'DM for Price',
+    condition: '9.8/10 Super Clean Condition',
+    image: 'https://img.drz.lazcdn.com/static/pk/p/57849cb15190119e64e5cbf5d962ffbd.jpg_720x720q80.jpg_.webp',
+    description: 'Official PTA Approved Google Pixel 7 in pristine condition with Tensor G2 processor and 50MP flagship cameras.',
+    fullDescription: 'Upgrade your lifestyle with the Google Pixel 7 in super clean 9.8/10 mint condition. 100% genuine hardware featuring Official PTA Approval. Powered by the advanced Google Tensor G2 processor, 8GB RAM, and 128GB internal storage. Captures life in vibrant colors with its industry-leading 50MP dual rear camera setup and 10.8MP front selfie camera. Equipped with a smooth 6.3-inch AMOLED 90Hz display and a durable 4355mAh fast-charging battery.',
+    specs: [
+      'Official PTA Approved',
+      '8GB RAM | 128GB Storage',
+      'Google Tensor G2 Flagship Processor',
+      '50MP Dual Rear Camera | 10.8MP Selfie',
+      '6.3" AMOLED 90Hz Smooth Display',
+      '9.8/10 Pristine Mint Condition (100% Genuine)'
+    ]
+  },
+  {
     id: 'airpods-pro-3-tws',
     name: 'AirPods Pro 3 TWS Wireless Earbuds',
     category: 'Speakers',
