@@ -21,19 +21,23 @@ export default function ProductCard({ product }: ProductCardProps) {
       {/* Product Card UI */}
       <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-[#C19A6B] transition-all duration-300 flex flex-col justify-between group hover:shadow-xl hover:-translate-y-1">
         <div>
-          {/* Product Image & Badges */}
-          <div className="relative h-52 w-full bg-slate-900 overflow-hidden border-b border-slate-100">
+          {/* Uniform Image Banner (Fixed Aspect Ratio & Perfect Fit) */}
+          <div className="relative h-60 w-full bg-slate-100 overflow-hidden border-b border-slate-100">
             <img
               src={product.image}
               alt={product.name}
-              className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300 bg-white"
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              onError={(e) => {
+                // Fallback image if any link breaks
+                (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1523206489230-c012c64b2b48?q=80&w=800&auto=format&fit=crop';
+              }}
             />
-            <div className="absolute top-3 left-3">
+            <div className="absolute top-3 left-3 z-10">
               <span
-                className={`text-xs font-bold px-3 py-1 rounded-full border shadow-sm ${
+                className={`text-[11px] font-bold px-3 py-1 rounded-full border shadow-sm backdrop-blur-md ${
                   product.condition.includes('New')
-                    ? 'bg-emerald-600 text-white border-emerald-500'
-                    : 'bg-amber-500 text-white border-amber-400'
+                    ? 'bg-emerald-600/90 text-white border-emerald-500'
+                    : 'bg-amber-500/90 text-white border-amber-400'
                 }`}
               >
                 {product.condition}
@@ -124,7 +128,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             <div className="p-6 overflow-y-auto space-y-5">
               <div className="flex items-center space-x-4">
                 <div className="w-20 h-20 bg-slate-100 rounded-xl overflow-hidden border border-slate-200 p-1 flex-shrink-0">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-contain" />
+                  <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
                 </div>
                 <div>
                   <span className="text-[10px] font-bold text-[#C19A6B] uppercase tracking-wider">{product.category}</span>
@@ -133,7 +137,7 @@ export default function ProductCard({ product }: ProductCardProps) {
                 </div>
               </div>
 
-              {/* Full Description Translated */}
+              {/* Full Description */}
               <div>
                 <h5 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">Description</h5>
                 <p className="text-slate-700 text-xs sm:text-sm leading-relaxed bg-slate-50 p-3.5 rounded-xl border border-slate-100">
