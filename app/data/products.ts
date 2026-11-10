@@ -18,7 +18,7 @@ export const products: Product[] = [
     category: 'Mobiles',
     price: 'DM for Price',
     condition: '9.8/10 Super Clean Condition',
-    image: 'Pixel.jfif',
+    image: 'Pixels.jfif',
     description: 'Official PTA Approved Google Pixel 7 in pristine condition with Tensor G2 processor and 50MP flagship cameras.',
     fullDescription: 'Upgrade your lifestyle with the Google Pixel 7 in super clean 9.8/10 mint condition. 100% genuine hardware featuring Official PTA Approval. Powered by the advanced Google Tensor G2 processor, 8GB RAM, and 128GB internal storage. Captures life in vibrant colors with its industry-leading 50MP dual rear camera setup and 10.8MP front selfie camera. Equipped with a smooth 6.3-inch AMOLED 90Hz display and a durable 4355mAh fast-charging battery.',
     specs: [
@@ -36,7 +36,7 @@ export const products: Product[] = [
     category: 'Speakers',
     price: 'DM for Price',
     condition: 'Brand New Condition',
-    image: 'AirPods.jfif',
+    image: 'AirPod.jfif',
     description: 'Smart TWS wireless earbuds featuring premium audio clarity, sleek design, and extended battery life.',
     fullDescription: 'Upgrade your audio game with the AirPods Pro 3 with TWS! Engineered with smart features, crystal-clear sound acoustics, active noise reduction support, and a sleek modern design. Offers exceptional battery backup with its wireless charging case for all-day continuous music playback and hands-free HD calls.',
     specs: [
@@ -54,7 +54,7 @@ export const products: Product[] = [
     category: 'Mobiles',
     price: 'DM for Price',
     condition: 'Brand New Condition',
-    image: '/iphone16.jfif',
+    image: '/iphone16pro.jfif',
     description: 'Official PTA Approved iPhone 16 Pro Max in Desert Titanium color with 100% battery health and complete box.',
     fullDescription: 'Premium Apple iPhone 16 Pro Max (256GB Storage) in stunning Desert Titanium finish. The device is official PTA Approved (Gnext variant) with Physical SIM + eSIM capability. Features 100% Battery Health with only 194 charge cycles used. Comes with complete original box packing and an unused charging cable. Apple Official Warranty recently ended in June 2026.',
     specs: [
