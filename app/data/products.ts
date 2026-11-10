@@ -13,6 +13,24 @@ export interface Product {
 
 export const products: Product[] = [
   {
+    id: 'iphone-16-pro-max-256gb',
+    name: 'Apple iPhone 16 Pro Max (256GB)',
+    category: 'Mobiles',
+    price: 'DM for Price',
+    condition: 'Brand New Condition',
+    image: 'https://img.drz.lazcdn.com/g/30000000/100000000/100000000/100000000/p-0-1.jpg_720x720q80.jpg_.webp',
+    description: 'Official PTA Approved iPhone 16 Pro Max in Desert Titanium color with 100% battery health and complete box.',
+    fullDescription: 'Premium Apple iPhone 16 Pro Max (256GB Storage) in stunning Desert Titanium finish. The device is official PTA Approved (Gnext variant) with Physical SIM + eSIM capability. Features 100% Battery Health with only 194 charge cycles used. Comes with complete original box packing and an unused charging cable. Apple Official Warranty recently ended in June 2026.',
+    specs: [
+      '256GB Storage Capacity',
+      'Official PTA Approved (Physical SIM + eSIM)',
+      'Desert Titanium Color',
+      '100% Battery Health (194 Cycles Only)',
+      'Original Unused Cable & Complete Box',
+      'Brand New Condition (Apple Warranty Exp. June 2026)'
+    ]
+  },
+  {
     id: 'infinix-xpower-20go',
     name: 'Infinix XPOWER 20 GO Power Bank',
     category: 'Powerbanks',
@@ -31,5 +49,4 @@ export const products: Product[] = [
       'Official 12+1 Months Brand Warranty'
     ]
   }
-  // Aap ke baaki products yahan aate rahenge...
 ];
