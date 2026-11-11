@@ -13,6 +13,24 @@ export interface Product {
 
 export const products: Product[] = [
   {
+    id: '26cm-led-ring-light-tripod',
+    name: '26cm LED Ring Light with Tripod Stand',
+    category: 'Smartwatches & Lights',
+    price: 'Rs. 1,100',
+    originalPrice: 'Rs. 1,800',
+    condition: 'Brand New (Free Delivery)',
+    image: '/Ring.jpg',
+    description: 'Professional 26cm LED ring light with adjustable brightness modes and tripod stand, perfect for TikTok reels, vlogging, and product photography.',
+    fullDescription: 'Illuminate every shot with professional clarity! The 26cm LED Ring Light is an essential setup for content creators making Instagram reels, YouTube videos, live streaming, online product photography, or personal selfies[cite: 16]. Features adjustable light intensity modes for soft and bright lighting setups, uniform facial illumination, and includes a durable tripod stand with Free Delivery included[cite: 16]!',
+    specs: [
+      '26cm Big Diameter LED Ring Light',
+      'Adjustable Brightness & Color Modes',
+      'Durable Tripod Stand Included',
+      'Perfect for Reels, YouTube, Vlogging & Product Shoot',
+      'Free Delivery Included'
+    ]
+  },
+  {
     id: 'buds-pro-4-wireless-earbuds',
     name: 'BUDS PRO 4 Wireless Earbuds',
     category: 'Speakers',
