@@ -13,6 +13,40 @@ export interface Product {
 
 export const products: Product[] = [
   {
+    id: 'remax-s2-bluetooth-headset',
+    name: 'REMAX S2 Magnet Sports Bluetooth Headset',
+    category: 'Speakers',
+    price: 'DM for Price',
+    condition: 'Brand New (100% Original)',
+    image: '/Remax.jpg',
+    description: 'Stylish wireless Bluetooth headset featuring magnetic earbuds, HD calling mic, deep bass audio, and secure ergonomic fit.',
+    fullDescription: 'Upgrade your daily audio and sports routine with the REMAX S2 Magnet Bluetooth Headset[cite: 19]! Designed with a stylish neckband form factor and magnetic earbuds that snap together securely when not in use[cite: 19]. Delivers rich HD sound performance for music playback and crystal-clear wireless voice calling[cite: 19]. Lightweight, comfortable, and sweat-proof build ideal for workouts, travel, and hands-free daily usage[cite: 19].',
+    specs: [
+      'Magnetic Earbuds Lock Mechanism',
+      'High-Clarity HD Voice Calling Mic',
+      'Rich Bass & Dynamic Audio Output',
+      'Bluetooth Wireless Connectivity',
+      'Ergonomic Lightweight Sports Design'
+    ]
+  },
+  {
+    id: 'partybox-15w-flame-led-speaker',
+    name: 'PARTYBOX 15W Flame LED Speaker',
+    category: 'Speakers',
+    price: 'DM for Price',
+    condition: 'Brand New (Flame LED Effects)',
+    image: '/Party.jpg',
+    description: '15W portable Bluetooth speaker featuring smooth audio output, warm flame LED light effects, TF card support, and Type-C fast charging.',
+    fullDescription: 'Experience music that relaxes your soul! The PARTYBOX Bluetooth speaker combines 15W smooth and soothing acoustic sound with mesmerising Flame LED lighting effects to create the ultimate relaxing atmosphere[cite: 18]. Equipped with Bluetooth wireless connectivity, TF card playback support, and modern Type-C fast charging[cite: 18]. Designed for those who appreciate pure audio warmth and soothing ambient lighting[cite: 18].',
+    specs: [
+      '15W Smooth & Calming Sound Output',
+      'Warm Flame LED Ambient Lights',
+      'Seamless Bluetooth Wireless Connectivity',
+      'TF Memory Card Support',
+      'Modern Type-C Fast Charging Port'
+    ]
+  },
+  {
     id: 'classic-rgb-bluetooth-speaker',
     name: 'Premium Classic RGB Bluetooth Speaker',
     category: 'Speakers',
