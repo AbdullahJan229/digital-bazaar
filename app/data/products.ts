@@ -13,6 +13,25 @@ export interface Product {
 
 export const products: Product[] = [
   {
+    id: 'romoss-20000mah-22.5w-powerbank',
+    name: 'ROMOSS 20000mAh 22.5W Power Bank',
+    category: 'Powerbanks',
+    price: 'DM for Price',
+    condition: '100% Original ROMOSS Quality',
+    image: '/Romoss.jpg',
+    description: 'Ultra-fast 22.5W 20000mAh power bank with 3 output ports, Type-C dual input/output, and airline-approved pocket-friendly design.',
+    fullDescription: 'Jummah Special deal on original ROMOSS 20000mAh high-capacity power bank[cite: 13]! Features 22.5W Super Fast Charging capability[cite: 13] that powers up smartphones, earbuds, and devices rapidly in just 30 minutes[cite: 13]. Equipped with 3 output ports (USB & Type-C) to charge multiple devices simultaneously[cite: 13]. Built with multi-protection safety features, slim lightweight airline-approved design, and includes a complimentary charging cable inside[cite: 13].',
+    specs: [
+      '20,000mAh Real High-Capacity Battery',
+      '22.5W Super Fast Charging Support',
+      '3 Output Ports (Charge Multiple Devices Together)',
+      'USB & Type-C Input/Output Compatibility',
+      'Multi-Protection Safety System & Airline Approved',
+      'Slim, Lightweight & Pocket-Friendly Design',
+      'Free Charging Cable Included in Box'
+    ]
+  },
+  {
     id: 'lenovo-thinkpad-i7-4th-gen',
     name: 'Lenovo ThinkPad Core i7 (4th Gen)',
     category: 'Mobiles',
