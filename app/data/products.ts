@@ -13,6 +13,24 @@ export interface Product {
 
 export const products: Product[] = [
   {
+    id: 'dell-latitude-5470-i7',
+    name: 'DELL Latitude 5470 (i7 6th Gen HQ)',
+    category: 'Mobiles', // Laptop category filter add hone tak catalog me display hone k liye
+    price: 'DM for Price',
+    condition: 'Grade A Quality Stock',
+    image: '/Dell.jfif',
+    description: 'High-performance business laptop ideal for online courses, thesis work, digital marketing, and web development.',
+    fullDescription: 'An extremely powerful and reliable laptop unit suited for students, digital marketers, research scholars, e-commerce freelancers (Amazon, eBay, Daraz), and office tasks. Features a high-performance Intel Core i7 6th Gen HQ processor, 8GB DDR4 RAM, and a super-fast 250GB M.2 SSD. Comes equipped with a crisp 14-inch FHD Display, Backlit Keyboard, HD Web Camera, and 2+ Hours Battery Backup. Only 4 pristine Grade A units available in stock!',
+    specs: [
+      'Intel Core i7 6th Gen HQ High-Performance Processor',
+      '8GB DDR4 RAM | 250GB M.2 High-Speed SSD',
+      '14" Full HD (FHD) Anti-Glare Display',
+      'Backlit Keyboard & HD Web Camera',
+      '2+ Hours Long Battery Backup',
+      'Pristine Grade A Condition (Limited Stock: 4 Units)'
+    ]
+  },
+  {
     id: 'apple-iphone-14-128gb',
     name: 'Apple iPhone 14 (128GB)',
     category: 'Mobiles',
