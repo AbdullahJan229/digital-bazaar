@@ -13,6 +13,24 @@ export interface Product {
 
 export const products: Product[] = [
   {
+    id: 'simple-airpods-pro-2-green',
+    name: 'Simple Airpods Pro 2 (Shining Green)',
+    category: 'Speakers',
+    price: 'Rs. 1,500',
+    originalPrice: 'Rs. 2,500',
+    condition: 'Brand New (Jummah Special Offer)',
+    image: '/Green.jpg',
+    description: 'Stylish wireless earbuds featuring digital battery display, touch controls, and a unique Shining Green & Golden Top Black case.',
+    fullDescription: 'Special Jummah offer deal from Digital Bazaar! High-style Simple Airpods Pro 2 in an eye-catching Shining Green finish with a premium Golden Top Black charging case. Features integrated touch controls, a digital battery level display, and clear sound audio performance for daily calls and music listening.',
+    specs: [
+      'Smart Touch Sensor Controls',
+      'Digital Battery Percentage Display',
+      'Shining Green Finish with Golden Top Black Case',
+      'Instant Auto-Pairing Wireless Bluetooth',
+      'Jummah Special Limited Time Price'
+    ]
+  },
+  {
     id: 'boocce-10000mah-powerbank',
     name: 'Boocce 10000mAh Power Bank',
     category: 'Powerbanks',
