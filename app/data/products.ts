@@ -15,7 +15,7 @@ export const products: Product[] = [
   {
     id: 'remax-s2-bluetooth-headset',
     name: 'REMAX S2 Magnet Sports Bluetooth Headset',
-    category: 'Speakers',
+    category: 'AirPods',
     price: 'DM for Price',
     condition: 'Brand New (100% Original)',
     image: '/Remax.jpg',
@@ -283,7 +283,7 @@ export const products: Product[] = [
   {
     id: 'nephoo-np-56-wireless-mic',
     name: 'Nephoo NP 56 Wireless Microphone',
-    category: 'Speakers',
+    category: 'AirPods',
     price: 'DM for Price',
     condition: 'Brand New (Tested Quality)',
     image: '/Neepho.jpg',
