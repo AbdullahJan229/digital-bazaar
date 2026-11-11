@@ -13,13 +13,30 @@ export interface Product {
 
 export const products: Product[] = [
   {
+    id: 'apple-iphone-14-128gb',
+    name: 'Apple iPhone 14 (128GB)',
+    category: 'Mobiles',
+    price: 'DM for Price',
+    condition: '100% Genuine Like New Condition',
+    image: '/iphone.jfif',
+    description: 'Official PTA Approved iPhone 14 in pristine Blue color with 100% sealed waterpack condition and premium performance.',
+    fullDescription: 'Handpicked 100% genuine Apple iPhone 14 (128GB) in stunning Blue finish. Unlike heavily used market stock, these pristine devices are in like-new condition, with select pieces available at 0 battery cycles! Features Official PTA Approval with Physical SIM + eSIM support, 90% to 96% battery health, and guaranteed 100% sealed water-pack integrity.',
+    specs: [
+      '128GB Internal Storage',
+      'Official PTA Approved (Physical SIM + eSIM)',
+      '100% Sealed Water Pack Guarantee',
+      '90% – 96% Battery Health (0 Cycle Pieces Available)',
+      'Stunning Blue Color Finish',
+      '100% Genuine Like New Condition'
+    ]
+  },
+  {
     id: 'google-pixel-7-pta',
     name: 'Google Pixel 7 (8GB / 128GB)',
     category: 'Mobiles',
     price: 'DM for Price',
     condition: '9.8/10 Super Clean Condition',
-    // Agr public folder me photo rakhi hai to us ka name pass karein (e.g. '/pixel7.jpg')
-    image: '/Pixels.jfif',
+    image: '/pixel7.jpg',
     description: 'Official PTA Approved Google Pixel 7 in pristine condition with Tensor G2 processor and 50MP flagship cameras.',
     fullDescription: 'Upgrade your lifestyle with the Google Pixel 7 in super clean 9.8/10 mint condition. 100% genuine hardware featuring Official PTA Approval. Powered by the advanced Google Tensor G2 processor, 8GB RAM, and 128GB internal storage. Captures life in vibrant colors with its industry-leading 50MP dual rear camera setup and 10.8MP front selfie camera. Equipped with a smooth 6.3-inch AMOLED 90Hz display and a durable 4355mAh fast-charging battery.',
     specs: [
@@ -37,8 +54,7 @@ export const products: Product[] = [
     category: 'Mobiles',
     price: 'DM for Price',
     condition: 'Brand New Condition',
-    // Agr public folder me photo rakhi hai to us ka name pass karein (e.g. '/iphone16.jpg' ya '/iphone16.jfif')
-    image: '/iphone16pro.jfif',
+    image: '/iphone16.jpg',
     description: 'Official PTA Approved iPhone 16 Pro Max in Desert Titanium color with 100% battery health and complete box.',
     fullDescription: 'Premium Apple iPhone 16 Pro Max (256GB Storage) in stunning Desert Titanium finish. The device is official PTA Approved (Gnext variant) with Physical SIM + eSIM capability. Features 100% Battery Health with only 194 charge cycles used. Comes with complete original box packing and an unused charging cable. Apple Official Warranty recently ended in June 2026.',
     specs: [
@@ -56,7 +72,7 @@ export const products: Product[] = [
     category: 'Speakers',
     price: 'DM for Price',
     condition: 'Brand New Condition',
-    image: 'Airpod.jfif',
+    image: 'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?q=80&w=800&auto=format&fit=crop',
     description: 'Smart TWS wireless earbuds featuring premium audio clarity, sleek design, and extended battery life.',
     fullDescription: 'Upgrade your audio game with the AirPods Pro 3 with TWS! Engineered with smart features, crystal-clear sound acoustics, active noise reduction support, and a sleek modern design. Offers exceptional battery backup with its wireless charging case for all-day continuous music playback and hands-free HD calls.',
     specs: [
@@ -75,7 +91,7 @@ export const products: Product[] = [
     price: 'Rs. 4,099',
     originalPrice: 'Rs. 5,500',
     condition: 'Brand New (12+1 Months Warranty)',
-    image: 'Infinix.webp',
+    image: 'https://images.unsplash.com/photo-1609592424074-17726391d17e?q=80&w=800&auto=format&fit=crop',
     description: 'Powerful 20,000mAh high-capacity power bank with 15W fast charging and multi-device support.',
     fullDescription: 'Never run out of power during load shedding or travel! The Infinix XPOWER 20 GO is an original 20000mAh high-capacity power bank engineered for maximum efficiency and safety. It features 15W fast charging output, Type-C 5V/3A dual input & output compatibility, and allows simultaneous multi-device charging. Comes equipped with comprehensive safety protection against short-circuits and overheating, plus a complimentary high-speed 3A Type-C charging cable inside the box.',
     specs: [
