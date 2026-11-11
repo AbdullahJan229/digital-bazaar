@@ -32,7 +32,7 @@ export const products: Product[] = [
   {
     id: 'partybox-15w-flame-led-speaker',
     name: 'PARTYBOX 15W Flame LED Speaker',
-    category: 'Speakers',
+    category: 'Lights',
     price: 'DM for Price',
     condition: 'Brand New (Flame LED Effects)',
     image: '/Party.jpg',
@@ -85,7 +85,7 @@ export const products: Product[] = [
   {
     id: 'buds-pro-4-wireless-earbuds',
     name: 'BUDS PRO 4 Wireless Earbuds',
-    category: 'Speakers',
+    category: 'AirPods',
     price: 'Rs. 1,800',
     originalPrice: 'Rs. 2,800',
     condition: 'Brand New (Milad-un-Nabi Special)',
@@ -123,7 +123,7 @@ export const products: Product[] = [
   {
     id: 'buds-pro-16-wireless-earbuds',
     name: 'BUDS PRO 16 Wireless Earbuds',
-    category: 'Speakers',
+    category: 'AirPods',
     price: 'Rs. 2,000',
     originalPrice: 'Rs. 3,200',
     condition: 'Brand New (Sealed Packaging)',
@@ -214,7 +214,7 @@ export const products: Product[] = [
   {
     id: 'lenovo-thinkpad-i7-4th-gen',
     name: 'Lenovo ThinkPad Core i7 (4th Gen)',
-    category: 'Mobiles',
+    category: 'Laptops',
     price: 'DM for Price',
     condition: 'Durable & Reliable Build (Free Delivery)',
     image: '/Lenovo.jfif',
@@ -231,7 +231,7 @@ export const products: Product[] = [
   {
     id: 'simple-airpods-pro-2-green',
     name: 'Simple Airpods Pro 2 (Shining Green)',
-    category: 'Speakers',
+    category: 'AirPods',
     price: 'Rs. 1,500',
     originalPrice: 'Rs. 2,500',
     condition: 'Brand New (Jummah Special Offer)',
@@ -300,7 +300,7 @@ export const products: Product[] = [
   {
     id: 'dell-latitude-5470-i7',
     name: 'DELL Latitude 5470 (i7 6th Gen HQ)',
-    category: 'Mobiles', // Laptop category filter add hone tak catalog me display hone k liye
+    category: 'Laptops', // Laptop category filter add hone tak catalog me display hone k liye
     price: 'DM for Price',
     condition: 'Grade A Quality Stock',
     image: '/Dell.jfif',
@@ -372,7 +372,7 @@ export const products: Product[] = [
   {
     id: 'airpods-pro-3-tws',
     name: 'AirPods Pro 3 TWS Wireless Earbuds',
-    category: 'Speakers',
+    category: 'AirPods',
     price: 'DM for Price',
     condition: 'Brand New Condition',
     image: 'Airpod.jfif',
