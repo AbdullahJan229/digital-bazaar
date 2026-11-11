@@ -13,6 +13,24 @@ export interface Product {
 
 export const products: Product[] = [
   {
+    id: 'classic-rgb-bluetooth-speaker',
+    name: 'Premium Classic RGB Bluetooth Speaker',
+    category: 'Speakers',
+    price: 'Rs. 2,200',
+    originalPrice: 'Rs. 3,200',
+    condition: 'Brand New (Classic Look & RGB Lights)',
+    image: '/Bluetooth.jpg',
+    description: 'Portable Bluetooth speaker combining classic vintage design with modern RGB lighting, deep bass, TF card, and USB playback support.',
+    fullDescription: 'Classic aesthetics meet modern technology! This Premium Portable Bluetooth Speaker features an elegant vintage look elevated by vibrant dynamic RGB lights[cite: 17]. Delivers powerful sound output with deep bass performance for indoor gatherings, outdoor hangouts, and daily music listening[cite: 17]. Equipped with seamless Bluetooth connectivity, TF card reader, USB drive support, and a premium durable finish[cite: 17].',
+    specs: [
+      'Powerful Sound Output & Deep Bass',
+      'Dynamic RGB Party Lighting',
+      'Bluetooth Wireless Connectivity',
+      'TF Card & USB Playback Support',
+      'Classic Vintage Design with Modern Touch'
+    ]
+  },
+  {
     id: '26cm-led-ring-light-tripod',
     name: '26cm LED Ring Light with Tripod Stand',
     category: 'Smartwatches & Lights',
