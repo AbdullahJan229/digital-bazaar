@@ -132,7 +132,7 @@ export default function Home() {
       <CheckoutModal
         product={selectedCheckoutProduct}
         onClose={() => setSelectedCheckoutProduct(null)}
-        adminPhoneNumber="923130661471"
+        adminPhoneNumber="923017604303"
       />
 
       <Footer />

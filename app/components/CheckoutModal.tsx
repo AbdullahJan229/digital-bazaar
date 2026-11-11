@@ -6,13 +6,13 @@ import { Product } from '../data/products';
 interface CheckoutModalProps {
   product: Product | null;
   onClose: () => void;
-  adminPhoneNumber?: string; // e.g. "923130661471"
+  adminPhoneNumber?: string; // e.g. "923017604303"
 }
 
 export default function CheckoutModal({
   product,
   onClose,
-  adminPhoneNumber = '923130661471', // Apni WhatsApp Number Yahan Set Karein
+  adminPhoneNumber = '923017604303', // Apni WhatsApp Number Yahan Set Karein
 }: CheckoutModalProps) {
   const [formData, setFormData] = useState({
     name: '',
