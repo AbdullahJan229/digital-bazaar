@@ -13,6 +13,23 @@ export interface Product {
 
 export const products: Product[] = [
   {
+    id: 'boocce-10000mah-powerbank',
+    name: 'Boocce 10000mAh Power Bank',
+    category: 'Powerbanks',
+    price: 'DM for Price',
+    condition: 'Brand New (Free Delivery)',
+    image: '/boocce.jpg',
+    description: 'Compact 10,000mAh original power bank with built-in Android and iPhone charging cables.',
+    fullDescription: 'High-value Jummah Special deal! The Boocce 10000mAh original power bank is a travel-friendly charger designed to keep your mobile devices powered on the go[cite: 12]. Comes equipped with two built-in charging cables for both Android (Type-C/Micro) and iPhone devices[cite: 12]. Includes Free Delivery with limited stock available[cite: 12]!',
+    specs: [
+      '10,000mAh Original Real Capacity',
+      '2 Built-in Cables (Android & iPhone Support)',
+      'Compact & Portable Travel-Friendly Design',
+      'Free Delivery Included',
+      'Limited Stock Available'
+    ]
+  },
+  {
     id: 'skmei-2624-dual-time-watch',
     name: 'SKMEI Original Dual Time Watch (Model 2624)',
     category: 'Smartwatches & Lights',
@@ -124,7 +141,7 @@ export const products: Product[] = [
     category: 'Speakers',
     price: 'DM for Price',
     condition: 'Brand New Condition',
-    image: 'AirPod.jfif',
+    image: 'Airpod.jfif',
     description: 'Smart TWS wireless earbuds featuring premium audio clarity, sleek design, and extended battery life.',
     fullDescription: 'Upgrade your audio game with the AirPods Pro 3 with TWS! Engineered with smart features, crystal-clear sound acoustics, active noise reduction support, and a sleek modern design. Offers exceptional battery backup with its wireless charging case for all-day continuous music playback and hands-free HD calls.',
     specs: [
@@ -143,7 +160,7 @@ export const products: Product[] = [
     price: 'Rs. 4,099',
     originalPrice: 'Rs. 5,500',
     condition: 'Brand New (12+1 Months Warranty)',
-    image: 'Infinix.jfif',
+    image: 'Infinix.webp',
     description: 'Powerful 20,000mAh high-capacity power bank with 15W fast charging and multi-device support.',
     fullDescription: 'Never run out of power during load shedding or travel! The Infinix XPOWER 20 GO is an original 20000mAh high-capacity power bank engineered for maximum efficiency and safety. It features 15W fast charging output, Type-C 5V/3A dual input & output compatibility, and allows simultaneous multi-device charging. Comes equipped with comprehensive safety protection against short-circuits and overheating, plus a complimentary high-speed 3A Type-C charging cable inside the box.',
     specs: [
