@@ -13,6 +13,26 @@ export interface Product {
 
 export const products: Product[] = [
   {
+    id: 'buds-pro-16-wireless-earbuds',
+    name: 'BUDS PRO 16 Wireless Earbuds',
+    category: 'Speakers',
+    price: 'Rs. 2,000',
+    originalPrice: 'Rs. 3,200',
+    condition: 'Brand New (Sealed Packaging)',
+    image: '/Buds.jpg',
+    description: 'Premium BUDS PRO 16 featuring ANC/ENC noise reduction, Hi-Fi deep bass sound, Bluetooth 5.3, and long battery backup.',
+    fullDescription: 'Elevate your sound experience with BUDS PRO 16! Engineered with advanced ANC / ENC noise reduction technology for crystal-clear calls and immersive music listening with deep bass acoustics. Features Bluetooth 5.3 fast auto-pairing, smart touch controls, sweat resistance, quick charging, and an ergonomic lightweight fit. Comes in sealed premium original packaging with delivery available across Pakistan.',
+    specs: [
+      'ANC / ENC Advanced Noise Reduction',
+      'Hi-Fi Sound Acoustics & Deep Bass Response',
+      'Bluetooth 5.3 Fast & Stable Connection',
+      'Smart Touch Controls & Crystal Clear Mic',
+      'Sweat Resistant & Quick Charging Support',
+      'Long Battery Backup with Premium Charging Case',
+      'Sealed Premium Packaging'
+    ]
+  },
+  {
     id: 'romoss-20000mah-high-capacity-powerbank',
     name: 'ROMOSS 20000mAh High-Capacity Power Bank',
     category: 'Powerbanks',
