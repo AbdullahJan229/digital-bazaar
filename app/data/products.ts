@@ -13,6 +13,23 @@ export interface Product {
 
 export const products: Product[] = [
   {
+    id: 'romoss-27000mah-65w-powerbank',
+    name: 'Romoss 27000mAh 65W Laptop Power Bank',
+    category: 'Powerbanks',
+    price: 'DM for Price',
+    condition: 'Brand New (Azadi Sale Special)',
+    image: '/Romos.jpg',
+    description: 'Heavy-duty 27000mAh power bank with 65W fast charging, C-to-C support, and laptop charging capability.',
+    fullDescription: 'Azadi Sale Special! The ultimate solution for load shedding, travel, and remote work[cite: 14]. This powerful 27000mAh Romoss power bank features high-speed 65W output capable of charging laptops, smartphones, and mobile devices smoothly[cite: 14]. Features multiple output ports and C-to-C fast charging support[cite: 14]. Built solid and reliable for long journeys and work-from-home power backups[cite: 14]!',
+    specs: [
+      '27,000mAh Ultra High Capacity',
+      '65W Powerful Fast Output (Laptop Charging Compatible)',
+      'Multiple Output Charging Ports',
+      'Type-C to Type-C Fast Charging',
+      'Heavy Duty & Solid Reliable Build'
+    ]
+  },
+  {
     id: 'romoss-20000mah-22.5w-powerbank',
     name: 'ROMOSS 20000mAh 22.5W Power Bank',
     category: 'Powerbanks',
