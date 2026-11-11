@@ -13,6 +13,24 @@ export interface Product {
 
 export const products: Product[] = [
   {
+    id: 'premium-digital-smart-watch',
+    name: 'Premium Digital Smart Watch',
+    category: 'Smartwatches & Lights',
+    price: 'Rs. 1,800',
+    originalPrice: 'Rs. 2,800',
+    condition: 'Brand New (Multiple Straps Included)',
+    image: '/Digital.jpg',
+    description: 'Versatile digital smartwatch featuring multiple quick-release silicone straps, crisp digital display, and water-resistant design.',
+    fullDescription: 'One watch with endless style possibilities! The Premium Digital Smart Watch allows you to customize your look for every occasion with multiple interchangeable, soft, and durable silicone straps. Features a crisp digital display, lightweight ergonomic fit, sweat and water resistance, and complete box packaging with a charging cable and user manual. Available in a wide array of vibrant colors including Black, White, Grey, Pink, Blue, Green, and Red.',
+    specs: [
+      'Premium High-Clarity Digital Display',
+      'Multiple Stylish Quick-Release Silicone Straps',
+      'Sweat & Water Resistant Build',
+      'Vibrant Colors: Black, White, Grey, Pink, Blue, Green, Red',
+      'Includes Charging Cable, User Manual & Box Packaging'
+    ]
+  },
+  {
     id: 'buds-pro-16-wireless-earbuds',
     name: 'BUDS PRO 16 Wireless Earbuds',
     category: 'Speakers',
