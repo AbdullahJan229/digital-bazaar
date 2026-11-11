@@ -13,6 +13,23 @@ export interface Product {
 
 export const products: Product[] = [
   {
+    id: 'skmei-2624-dual-time-watch',
+    name: 'SKMEI Original Dual Time Watch (Model 2624)',
+    category: 'Smartwatches & Lights',
+    price: 'DM for Price',
+    condition: 'Brand New (100% Original)',
+    image: '/Watch.jpg',
+    description: 'Original SKMEI Model 2624 featuring dual time display, premium steel chain, and water resistance.',
+    fullDescription: 'Authentic SKMEI Model 2624 dual time wristwatch engineered with a durable stainless steel chain and heavy-duty 147-gram build. Features dual time zone display functionality, water resistance, and a modern executive design suitable for both formal and daily casual wear.',
+    specs: [
+      '100% Original SKMEI (Model# 2624)',
+      'Dual Time Zone Display',
+      'Premium Stainless Steel Chain',
+      'Water Resistant Build',
+      'Solid 147 Gram Weight'
+    ]
+  },
+  {
     id: 'nephoo-np-56-wireless-mic',
     name: 'Nephoo NP 56 Wireless Microphone',
     category: 'Speakers',
