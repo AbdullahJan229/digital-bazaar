@@ -13,6 +13,26 @@ export interface Product {
 
 export const products: Product[] = [
   {
+    id: 'buds-pro-4-wireless-earbuds',
+    name: 'BUDS PRO 4 Wireless Earbuds',
+    category: 'Speakers',
+    price: 'Rs. 1,800',
+    originalPrice: 'Rs. 2,800',
+    condition: 'Brand New (Milad-un-Nabi Special)',
+    image: '/Budspro.jpg',
+    description: 'Feature-rich TWS earbuds with 3-voice changer modes, clear powerful sound, smart touch controls, and Free Delivery across Pakistan.',
+    fullDescription: 'Experience premium sound and smart style with BUDS PRO 4! Special Milad-un-Nabi offer deal featuring a unique 3 Voice Changer feature to transform your voice into different modes during calls. Engineered with clear & powerful sound output, built-in HD calling mic, smart volume & touch controls, fast stable Bluetooth connectivity, and a sleek glossy finish. Ideal for music, gaming, and daily calls with Free Delivery across Pakistan!',
+    specs: [
+      '3 Fun Voice Changer Modes',
+      'Clear & Powerful Sound Performance',
+      'Smart Touch & Volume Control',
+      'Clear Calling HD Built-in Mic',
+      'Fast & Stable Bluetooth Connection',
+      'Premium Glossy Finish Design',
+      'Free Delivery Across Pakistan'
+    ]
+  },
+  {
     id: 'premium-digital-smart-watch',
     name: 'Premium Digital Smart Watch',
     category: 'Smartwatches & Lights',
