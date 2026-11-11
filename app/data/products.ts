@@ -13,6 +13,23 @@ export interface Product {
 
 export const products: Product[] = [
   {
+    id: 'nephoo-np-56-wireless-mic',
+    name: 'Nephoo NP 56 Wireless Microphone',
+    category: 'Speakers',
+    price: 'DM for Price',
+    condition: 'Brand New (Tested Quality)',
+    image: '/Neepho.jpg',
+    description: 'Budget-friendly wireless lapel microphone system with excellent sound clarity for content creators and video recording.',
+    fullDescription: 'High-quality and affordable wireless microphone solution from Nephoo. Fully tested for crystal-clear audio recording, low noise distortion, and reliable wireless range. Ideal for vlogging, online classes, content creation, and live interviews without overcharging your budget.',
+    specs: [
+      'Tested & Verified Audio Quality',
+      'Plug & Play Wireless Connectivity',
+      'Compact & Lightweight Lapel Design',
+      'Low Noise Distortion & Clear Vocal Capture',
+      'Budget-Friendly High-Value Stock'
+    ]
+  },
+  {
     id: 'dell-latitude-5470-i7',
     name: 'DELL Latitude 5470 (i7 6th Gen HQ)',
     category: 'Mobiles', // Laptop category filter add hone tak catalog me display hone k liye
@@ -90,7 +107,7 @@ export const products: Product[] = [
     category: 'Speakers',
     price: 'DM for Price',
     condition: 'Brand New Condition',
-    image: 'AirPods_Pro_3.jfif',
+    image: 'AirPod.jfif',
     description: 'Smart TWS wireless earbuds featuring premium audio clarity, sleek design, and extended battery life.',
     fullDescription: 'Upgrade your audio game with the AirPods Pro 3 with TWS! Engineered with smart features, crystal-clear sound acoustics, active noise reduction support, and a sleek modern design. Offers exceptional battery backup with its wireless charging case for all-day continuous music playback and hands-free HD calls.',
     specs: [
