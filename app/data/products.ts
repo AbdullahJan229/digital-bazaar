@@ -13,6 +13,23 @@ export interface Product {
 
 export const products: Product[] = [
   {
+    id: 'lenovo-thinkpad-i7-4th-gen',
+    name: 'Lenovo ThinkPad Core i7 (4th Gen)',
+    category: 'Mobiles',
+    price: 'DM for Price',
+    condition: 'Durable & Reliable Build (Free Delivery)',
+    image: '/Lenovo.jfif',
+    description: 'Durable and fast-performance business laptop powered by Intel Core i7 4th Gen with SSD storage and Free Delivery across Pakistan.',
+    fullDescription: 'Looking for a reliable, fast, and durable budget laptop? The Lenovo ThinkPad Core i7 (4th Gen) is an unbeatable choice engineered for tough daily use. Ideal for office work, online tasks, freelancing, study, and general daily productivity. Features high-speed SSD storage and 8GB RAM, available in both 128GB SSD and 256GB SSD storage variants with Free Delivery across Pakistan!',
+    specs: [
+      'Intel Core i7 4th Generation Processor',
+      '8GB RAM | High-Speed SSD Storage',
+      'Available Storage Variants: 128GB SSD / 256GB SSD',
+      'Ideal for Freelancing, Office, Study & Daily Use',
+      'Free Delivery Across Pakistan'
+    ]
+  },
+  {
     id: 'simple-airpods-pro-2-green',
     name: 'Simple Airpods Pro 2 (Shining Green)',
     category: 'Speakers',
