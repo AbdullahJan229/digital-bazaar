@@ -67,7 +67,7 @@ export const products: Product[] = [
   {
     id: '26cm-led-ring-light-tripod',
     name: '26cm LED Ring Light with Tripod Stand',
-    category: 'Smartwatches & Lights',
+    category: 'Lights',
     price: 'Rs. 1,100',
     originalPrice: 'Rs. 1,800',
     condition: 'Brand New (Free Delivery)',
@@ -105,7 +105,7 @@ export const products: Product[] = [
   {
     id: 'premium-digital-smart-watch',
     name: 'Premium Digital Smart Watch',
-    category: 'Smartwatches & Lights',
+    category: 'Watches',
     price: 'Rs. 1,800',
     originalPrice: 'Rs. 2,800',
     condition: 'Brand New (Multiple Straps Included)',
@@ -266,7 +266,7 @@ export const products: Product[] = [
   {
     id: 'skmei-2624-dual-time-watch',
     name: 'SKMEI Original Dual Time Watch (Model 2624)',
-    category: 'Smartwatches & Lights',
+    category: 'Watches',
     price: 'DM for Price',
     condition: 'Brand New (100% Original)',
     image: '/Watch.jpg',
