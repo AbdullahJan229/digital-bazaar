@@ -13,6 +13,23 @@ export interface Product {
 
 export const products: Product[] = [
   {
+    id: 'romoss-10000mah-30w-powerbank',
+    name: 'Romoss 10000mAh 30W Fast Power Bank',
+    category: 'Powerbanks',
+    price: 'DM for Price',
+    condition: 'Brand New (Azadi Sale Special)',
+    image: '/Romosss.jpg',
+    description: 'Compact 10000mAh power bank with 30W powerful fast charging, multiple ports, and C-to-C charging support.',
+    fullDescription: 'Azadi Sale Special! Say goodbye to load shedding and low-battery worries during daily travel[cite: 15]. The Romoss 10000mAh 30W power bank offers fast and powerful charging performance for smartphones and gadgets[cite: 15]. Features multiple output ports and Type-C to Type-C fast charging capability[cite: 15]. Highly durable, solid, and travel-friendly build[cite: 15]!',
+    specs: [
+      '10,000mAh Real Capacity',
+      '30W Powerful Fast Charger Output',
+      'Multiple Charging Ports',
+      'Type-C to Type-C Fast Charging Support',
+      'Compact, Solid & Pocket-Friendly Design'
+    ]
+  },
+  {
     id: 'romoss-27000mah-65w-powerbank',
     name: 'Romoss 27000mAh 65W Laptop Power Bank',
     category: 'Powerbanks',
