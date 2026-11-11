@@ -11,7 +11,7 @@ export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [searchQuery, setSearchQuery] = useState<string>('');
 
-  const categories = ['All', 'Mobiles', 'Laptops', 'AirPods', 'Powerbanks', 'Lights', 'Watches'];
+  const categories = ['All', 'Mobiles', 'Laptops', 'AirPods', 'Powerbanks', 'Lights', 'Watches', 'Speakers'];
 
   const filteredProducts = products.filter((product) => {
     const matchesCategory = selectedCategory === 'All' || product.category === selectedCategory;
