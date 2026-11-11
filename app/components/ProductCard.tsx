@@ -1,34 +1,28 @@
 'use client';
 
 import React, { useState } from 'react';
-import { MessageCircle, CheckCircle2, Eye, X, ShieldCheck } from 'lucide-react';
+import { ShoppingBag, CheckCircle2, Eye, X, ShieldCheck } from 'lucide-react';
 import { Product } from '../data/products';
 
 interface ProductCardProps {
   product: Product;
+  onOrderNow?: () => void;
 }
 
-export default function ProductCard({ product }: ProductCardProps) {
+export default function ProductCard({ product, onOrderNow }: ProductCardProps) {
   const [showModal, setShowModal] = useState(false);
-  const whatsappNumber = '923017604303';
-
-  const orderMessage = encodeURIComponent(
-    `AoA! Mujhe Digital Bazaar se yeh product khareedna hai:\n\n*Product:* ${product.name}\n*Condition:* ${product.condition}\n*Price:* ${product.price}\n\nKya yeh available hai?`
-  );
 
   return (
     <>
-      {/* Product Card UI */}
       <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-[#C19A6B] transition-all duration-300 flex flex-col justify-between group hover:shadow-xl hover:-translate-y-1">
         <div>
-          {/* Uniform Image Banner (Fixed Aspect Ratio & Perfect Fit) */}
+          {/* Image Banner */}
           <div className="relative h-60 w-full bg-slate-100 overflow-hidden border-b border-slate-100">
             <img
               src={product.image}
               alt={product.name}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               onError={(e) => {
-                // Fallback image if any link breaks
                 (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1523206489230-c012c64b2b48?q=80&w=800&auto=format&fit=crop';
               }}
             />
@@ -69,7 +63,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           </div>
         </div>
 
-        {/* Pricing & Dual Action Buttons */}
+        {/* Pricing & Buttons */}
         <div className="p-5 pt-0 mt-2">
           <div className="flex items-baseline space-x-2 mb-4">
             <span className="text-xl font-extrabold text-slate-900">{product.price}</span>
@@ -81,36 +75,30 @@ export default function ProductCard({ product }: ProductCardProps) {
           </div>
 
           <div className="grid grid-cols-5 gap-2">
-            {/* View Full Details Button */}
             <button
               onClick={() => setShowModal(true)}
               className="col-span-2 flex items-center justify-center space-x-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 py-2.5 rounded-xl font-bold text-xs transition-all border border-slate-200"
-              title="View Full Specifications"
             >
               <Eye className="w-4 h-4 text-slate-700" />
               <span>Details</span>
             </button>
 
-            {/* Direct Buy WhatsApp Button */}
-            <a
-              href={`https://wa.me/${whatsappNumber}?text=${orderMessage}`}
-              target="_blank"
-              rel="noopener noreferrer"
+            {/* Direct Form Trigger */}
+            <button
+              onClick={onOrderNow}
               className="col-span-3 flex items-center justify-center space-x-1.5 bg-emerald-600 hover:bg-emerald-700 text-white py-2.5 rounded-xl font-bold text-xs transition-all shadow-md active:scale-95"
             >
-              <MessageCircle className="w-4 h-4 fill-white" />
-              <span>Buy Now</span>
-            </a>
+              <ShoppingBag className="w-4 h-4" />
+              <span>Order Now</span>
+            </button>
           </div>
         </div>
       </div>
 
-      {/* Full Description Popup Modal */}
+      {/* Details Modal */}
       {showModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 animate-in fade-in duration-200">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4">
           <div className="bg-white rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl border border-slate-200 max-h-[90vh] flex flex-col">
-            
-            {/* Modal Header */}
             <div className="p-5 border-b border-slate-100 flex items-center justify-between bg-slate-50">
               <div className="flex items-center space-x-2">
                 <ShieldCheck className="w-5 h-5 text-[#C19A6B]" />
@@ -118,13 +106,12 @@ export default function ProductCard({ product }: ProductCardProps) {
               </div>
               <button
                 onClick={() => setShowModal(false)}
-                className="w-8 h-8 rounded-full bg-slate-200 hover:bg-slate-300 flex items-center justify-center text-slate-700 transition-colors"
+                className="w-8 h-8 rounded-full bg-slate-200 hover:bg-slate-300 flex items-center justify-center text-slate-700"
               >
                 <X className="w-4 h-4" />
               </button>
             </div>
 
-            {/* Modal Body */}
             <div className="p-6 overflow-y-auto space-y-5">
               <div className="flex items-center space-x-4">
                 <div className="w-20 h-20 bg-slate-100 rounded-xl overflow-hidden border border-slate-200 p-1 flex-shrink-0">
@@ -137,7 +124,6 @@ export default function ProductCard({ product }: ProductCardProps) {
                 </div>
               </div>
 
-              {/* Full Description */}
               <div>
                 <h5 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">Description</h5>
                 <p className="text-slate-700 text-xs sm:text-sm leading-relaxed bg-slate-50 p-3.5 rounded-xl border border-slate-100">
@@ -145,7 +131,6 @@ export default function ProductCard({ product }: ProductCardProps) {
                 </p>
               </div>
 
-              {/* Complete Specifications List */}
               <div>
                 <h5 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Key Specifications & Highlights</h5>
                 <div className="space-y-2">
@@ -159,25 +144,24 @@ export default function ProductCard({ product }: ProductCardProps) {
               </div>
             </div>
 
-            {/* Modal Footer Action */}
             <div className="p-4 border-t border-slate-100 bg-slate-50 flex items-center justify-between">
               <button
                 onClick={() => setShowModal(false)}
-                className="px-4 py-2 text-xs font-bold text-slate-600 hover:text-slate-900 transition-colors"
+                className="px-4 py-2 text-xs font-bold text-slate-600"
               >
                 Close
               </button>
-              <a
-                href={`https://wa.me/${whatsappNumber}?text=${orderMessage}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-xl font-bold text-xs shadow-md transition-all active:scale-95"
+              <button
+                onClick={() => {
+                  setShowModal(false);
+                  if (onOrderNow) onOrderNow();
+                }}
+                className="flex items-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-xl font-bold text-xs shadow-md"
               >
-                <MessageCircle className="w-4 h-4 fill-white" />
-                <span>Confirm Order on WhatsApp</span>
-              </a>
+                <ShoppingBag className="w-4 h-4" />
+                <span>Order Now</span>
+              </button>
             </div>
-
           </div>
         </div>
       )}

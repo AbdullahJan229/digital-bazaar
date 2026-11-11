@@ -4,12 +4,14 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import ProductCard from './components/ProductCard';
 import Footer from './components/Footer';
-import { products } from './data/products';
+import { Product, products } from './data/products';
 import { Search, Sparkles, ShieldCheck, Truck, Headphones } from 'lucide-react';
+import CheckoutModal from './components/CheckoutModal';
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [searchQuery, setSearchQuery] = useState<string>('');
+  const [selectedCheckoutProduct, setSelectedCheckoutProduct] = useState<Product | null>(null);
 
   const categories = ['All', 'Mobiles', 'Laptops', 'AirPods', 'Powerbanks', 'Lights', 'Watches', 'Speakers'];
 
@@ -112,7 +114,11 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {filteredProducts.length > 0 ? (
             filteredProducts.map((product) => (
-              <ProductCard key={product.id} product={product} />
+              <ProductCard 
+                key={product.id} 
+                product={product} 
+                onOrderNow={() => setSelectedCheckoutProduct(product)}
+              />
             ))
           ) : (
             <div className="col-span-full text-center py-16 text-slate-400 font-medium bg-white rounded-2xl border border-dashed border-slate-300">
@@ -121,6 +127,13 @@ export default function Home() {
           )}
         </div>
       </section>
+
+      {/* Direct WhatsApp Order Modal */}
+      <CheckoutModal
+        product={selectedCheckoutProduct}
+        onClose={() => setSelectedCheckoutProduct(null)}
+        adminPhoneNumber="923130661471"
+      />
 
       <Footer />
     </main>
