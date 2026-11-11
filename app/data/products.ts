@@ -13,6 +13,24 @@ export interface Product {
 
 export const products: Product[] = [
   {
+    id: 'romoss-20000mah-high-capacity-powerbank',
+    name: 'ROMOSS 20000mAh High-Capacity Power Bank',
+    category: 'Powerbanks',
+    price: 'Rs. 3,600',
+    originalPrice: 'Rs. 4,800',
+    condition: 'Brand New (Milad-un-Nabi Special)',
+    image: '/Romo.jpg',
+    description: 'Massive 20,000mAh capacity power bank with fast multi-device charging, durable build, and Free Delivery all over Pakistan.',
+    fullDescription: 'Milad-un-Nabi Special Offer from Digital Bazaar! Eliminate low-battery anxiety with this powerful 20,000mAh Romoss power bank. Perfect for smartphones, earbuds, smartwatches, and gadgets during home, office, university, or outdoor travel. Features strong durable construction, fast efficient charging for multiple devices simultaneously, long-lasting battery backup, and Free Delivery across Pakistan!',
+    specs: [
+      '20,000mAh Massive Real Battery Capacity',
+      'Fast & Efficient Multi-Device Charging',
+      'Compact & Travel-Friendly Durable Build',
+      'Compatible with Smartphones, Earbuds & Smartwatches',
+      'Free Delivery All Over Pakistan'
+    ]
+  },
+  {
     id: 'romoss-10000mah-30w-powerbank',
     name: 'Romoss 10000mAh 30W Fast Power Bank',
     category: 'Powerbanks',
