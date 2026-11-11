@@ -32,7 +32,7 @@ export const products: Product[] = [
   {
     id: 'partybox-15w-flame-led-speaker',
     name: 'PARTYBOX 15W Flame LED Speaker',
-    category: 'Lights',
+    category: 'Speakers',
     price: 'DM for Price',
     condition: 'Brand New (Flame LED Effects)',
     image: '/Party.jpg',
