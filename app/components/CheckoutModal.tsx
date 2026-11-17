@@ -22,16 +22,63 @@ export default function CheckoutModal({
     quantity: 1,
     paymentMethod: 'Cash on Delivery',
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   if (!product) return null;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (isSubmitting) return;
+    setIsSubmitting(true);
 
-    // Formatted WhatsApp Message Text
+    // Price string (e.g. "Rs. 2,500") se numeric value nikalna
+    const numericPrice =
+      Number(String(product.price).replace(/[^0-9.]/g, '')) || 0;
+    const totalProductPrice = numericPrice * formData.quantity;
+
+    let generatedOrderId = '';
+    const webhookUrl = process.env.NEXT_PUBLIC_ORDER_WEBHOOK_URL;
+
+    // 1. Send Order to n8n Automation (Telegram + Google Sheets)
+    if (webhookUrl) {
+      try {
+        const res = await fetch(webhookUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            customerName: formData.name,
+            phone: formData.phone,
+            city: formData.city,
+            address: formData.address,
+            product: `${product.name} (x${formData.quantity})`,
+            productPrice: totalProductPrice,
+            quantity: formData.quantity,
+            paymentMethod: formData.paymentMethod,
+          }),
+        });
+
+        if (res.ok) {
+          const data = await res.json();
+          if (data?.orderId) {
+            generatedOrderId = data.orderId;
+          }
+        }
+      } catch (err) {
+        // Agar n8n tunnel band bhi ho toh WhatsApp checkout phir bhi chalta rahe
+        console.error('Webhook sync error:', err);
+      }
+    }
+
+    // 2. Formatted WhatsApp Message Text (Same as before + Order ID if available)
+    const orderIdLine = generatedOrderId
+      ? `*Order ID:* ${generatedOrderId}\n`
+      : '';
+
     const message = `*📦 NEW ORDER CONFIRMED!*
 -----------------------------------
-*Product:* ${product.name}
+${orderIdLine}*Product:* ${product.name}
 *Price:* ${product.price}
 *Quantity:* ${formData.quantity}
 -----------------------------------
@@ -47,6 +94,8 @@ _Order Placed via Digital Bazaar Website_`;
     // Encode text for URL
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${adminPhoneNumber}?text=${encodedMessage}`;
+
+    setIsSubmitting(false);
 
     // Open WhatsApp in new tab
     window.open(whatsappUrl, '_blank');
@@ -160,9 +209,10 @@ _Order Placed via Digital Bazaar Website_`;
 
           <button
             type="submit"
-            className="mt-4 w-full rounded-xl bg-emerald-600 py-3 font-semibold text-white shadow-md hover:bg-emerald-700 active:scale-[0.98] transition-all flex items-center justify-center space-x-2"
+            disabled={isSubmitting}
+            className="mt-4 w-full rounded-xl bg-emerald-600 py-3 font-semibold text-white shadow-md hover:bg-emerald-700 active:scale-[0.98] transition-all flex items-center justify-center space-x-2 disabled:opacity-60"
           >
-            <span>Confirm Order via WhatsApp</span>
+            <span>{isSubmitting ? 'Processing Order...' : 'Confirm Order via WhatsApp'}</span>
           </button>
         </form>
       </div>
