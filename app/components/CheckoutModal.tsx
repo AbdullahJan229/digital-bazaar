@@ -41,8 +41,8 @@ export default function CheckoutModal({
     setIsSubmitting(true);
     setErrorMsg(null);
 
-    const numericPrice =
-      Number(String(product.price).replace(/[^0-9.]/g, '')) || 0;
+    const priceMatch = String(product.price).replace(/,/g, '').match(/\d+(\.\d+)?/);
+    const numericPrice = priceMatch ? Number(priceMatch[0]) : 0;
     const totalProductPrice = numericPrice * formData.quantity;
     const deliveryCharges = 250;
 
